@@ -6,4 +6,11 @@
     background: #FEFAE0;
     box-sizing: border-box;
     padding-bottom: 20px;
+    display: flex;
+}
+
+.children{
+    position:absolute;
+    top:3rem;
+    left:17rem;
 }

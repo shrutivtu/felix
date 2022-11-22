@@ -14,10 +14,14 @@ export default function Home() {
         {/* <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet"></link> */}
+      {/* <Head>
+        <title>Felix</title>
+        <meta name="description" content="help in meeting your goals" />
+      </Head>
       <Header />
       <div className={styles.mainContainer}>
         <Sidebar />
-      </div>
+      </div> */}
     </div>
   )
 }
