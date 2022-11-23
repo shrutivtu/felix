@@ -6,7 +6,7 @@ import styles from '../../styles/Home.module.css';
 
 const Layout = ({children}) => {
   return (
-    <main>
+    <main style={{ width: '100vw' }}>
       <Head>
         <title>Felix</title>
         <meta name="description" content="help in meeting your goals" />
