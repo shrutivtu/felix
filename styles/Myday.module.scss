@@ -37,6 +37,29 @@
             cursor: pointer;
         }
     }   
+
+    .taskList{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top:2rem;
+        box-sizing: border-box;
+        width:100%;
+
+        .taskSection{
+            width:100%;
+            list-style: none;
+            margin-bottom: 10px;
+            border:1px solid #BB4D00;
+            padding:1rem 1rem;
+            display: flex;
+            align-items: center;
+            background: #ffffff;
+            border-radius: 2px;
+            opacity: 0.9;
+        }
+    }
 }
 .myDayRight{
     width:50%;
@@ -47,15 +70,8 @@
     align-items: center;
     justify-content: center;
 
-    // input{
-    //     width:12rem;
-    //     height:2.5rem;
-    //     border: 1px solid #CA5310;
-    //     border-radius: 2px;
-    // }
-
     .inputBtnSection{
-        
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
