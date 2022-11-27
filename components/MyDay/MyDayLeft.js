@@ -16,6 +16,14 @@ const MyDayLeft = ({ styles }) => {
             check: false
         }
     ]
+
+    const handleCheck = () => {
+        console.log('checked');
+    }
+
+    const handleAdd = () => {
+        console.log('add task');
+    }
     return (
         <div>
             <h3>
@@ -23,12 +31,12 @@ const MyDayLeft = ({ styles }) => {
             </h3>
             <div className={styles.inputBtnSection}>
                 <input type="text" className={styles.inputLeft} placeholder="Add Task...." />
-                <div className={styles.buttonLeft}><span>Add</span></div>
+                <div className={styles.buttonLeft} onClick={handleAdd}><span>Add</span></div>
             </div>
             <div className={styles.taskList}>
                {tasks.map(task => {
                     return (<div key={task.id} className={styles.taskBox}>
-                        <input type="checkbox" /><span className={styles.taskDesc}>{task.taskDesc}</span>
+                        <input type="checkbox" onChange={handleCheck}/><span className={styles.taskDesc}>{task.taskDesc}</span>
                     </div>)
                 })}
             </div>
