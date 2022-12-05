@@ -5,6 +5,46 @@
     padding: 1rem;
     box-sizing: border-box;
     max-width: 100%;
+
+    .taskList{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top:2rem;
+        box-sizing: border-box;
+        width:100%;
+        background-color: #ffffff;
+        margin-top: 2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        border-radius: 1rem;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+        .taskBox{
+            width:100%;
+            list-style: none;
+            margin-bottom: 10px;
+            border:1px solid #BB4D00;
+            padding:0.5rem 1rem;
+            display: flex;
+            align-items: center;
+            background: #ffffff;
+            border-radius: 2px;
+            opacity: 0.9;
+            border-radius: 5px;
+            // overflow-x: scroll;
+            
+
+            .taskDesc{
+                margin-left: 10px;
+            }
+        }
+
+        .checkTaskBox{
+            background-color: #ccd5ae;
+        }
+    }
 }
 .myDayLeft{
     width:50%;
@@ -40,44 +80,7 @@
         }
     }   
 
-    .taskList{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top:2rem;
-        box-sizing: border-box;
-        width:100%;
-        background-color: #ffffff;
-        margin-top: 2rem;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-
-        .taskBox{
-            width:100%;
-            list-style: none;
-            margin-bottom: 10px;
-            border:1px solid #BB4D00;
-            padding:0.5rem 1rem;
-            display: flex;
-            align-items: center;
-            background: #ffffff;
-            border-radius: 2px;
-            opacity: 0.9;
-            border-radius: 5px;
-            // overflow-x: scroll;
-            
-
-            .taskDesc{
-                margin-left: 10px;
-            }
-        }
-
-        .checkTaskBox{
-            background-color: darkcyan;
-        }
-    }
+    
 }
 .myDayRight{
     width:50%;
@@ -99,6 +102,7 @@
             height:2.5rem;
             border: 1px solid #BB4D00;
             border-radius: 2px;
+            padding-left: 1rem;
         }
     
         .buttonRight{
