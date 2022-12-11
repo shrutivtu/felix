@@ -1,13 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/Target.module.scss';
 import TargetTable from '../components/Target/TargetTable';
+import Popup from '../components/Target/Popup';
 
 const targets = () => {
   return (
     <main className={styles.targetContainer}>
-      <section className={styles.targetCreation}>
-        <span>+ Create Target</span>
-      </section>
+      <Popup styles={styles} />
       <TargetTable />
     </main>
   )

@@ -6,7 +6,7 @@
     .targetCreation{
         // width: 50%;
         // margin: 0 auto;
-        span{
+        & > span{
             background-color: #CA5310;
             padding: 0.85rem 2rem;
             text-align: center;
@@ -16,6 +16,68 @@
             cursor: pointer;
             border-radius: 0.5rem;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        }
+    }
+    .popupContainer{
+        width: 25rem;
+        height: 18rem;
+        border-radius: 5px;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        // background-color: #fff;
+        background-color: #dddddd;
+        box-shadow: 0 0 0 50vmax rgba(0,0,0,.5);
+        box-sizing: border-box;
+
+        .crossSection{
+            width:100%;
+            height:2.5rem;
+            // border-bottom:1px solid grey;
+            padding-top:6px;
+        }
+
+        span{
+            cursor: pointer;
+            padding: 6px 10px;
+            // border: 1px solid black;
+            border-radius: 3px;
+            font-size: 20px;
+            background-color:#691E06;
+            color: #fff;
+        }
+
+        form{
+            width:100%;
+            padding: 1rem 1rem;
+
+            .targetName{
+                width: 90%;
+                height:3rem;
+                border: none;
+                border-radius:5px;
+                padding-left: 1rem;
+                outline: none;
+            }
+
+            .targetDesc{
+                width: 90%;
+                height:4.5rem;
+                border: none;
+                border-radius:5px;
+                padding-left: 1rem;
+                outline: none;
+                margin-top:1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            &>span{
+                padding:0.8rem 1rem;
+                background-color: #691E06;
+                color: #fff;
+                margin-top: 4rem;
+            }
         }
     }
     .tableSection{
