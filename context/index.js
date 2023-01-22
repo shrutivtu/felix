@@ -1,7 +1,7 @@
 import { createContext, useState, useEffect } from "react";
 const FelixContext = createContext(undefined);
 const FelixContextProvider = (props) => {
-  const [ targets, setTargets ] = useState([]);
+  const [ targets, setTargets ] = useState({list:[]});
   useEffect(() => {
     console.log(targets);
   },[targets]);

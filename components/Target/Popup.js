@@ -1,16 +1,25 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { FelixContext } from '../../context';
-
 const Popup = ({ styles }) => {
     const [openPopup, setOpenPopup] = useState(false);
     const [target, setTarget] = useState({ name: '', desc: '' });
-    const context = useContext(FelixContext);
-   
+    const {setTargets,targets} = useContext(FelixContext);
+
+
+    useEffect(()=>{
+        console.log("targets...........$$$$$$$$$$$$$$$$$$$$",targets);
+    },[targets])
+
     const handlePopup = (e) => {
         setOpenPopup(!openPopup);
     }
+
     const handleSubmit = (e) => {
-        console.log(context);
+        console.log(target);
+        let {list} = targets;
+        console.log("list",list)
+        list.push(target)
+        setTargets({...targets,list});
     }
     const modal = () => {
         return(
